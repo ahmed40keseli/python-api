@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kayıt</title>
+</head>
+    <body>  
+        <h2>hoşgeldiniz</h2>
+        <h2>teacher record</h2>
+        <form action = "/teacherreply" method = "post">
+        teacher name: <input type="string" name ="teacher_name"> <br>
+        teacher surname: <input type="string" name ="teacher_surname"> <br>
+        teacher title: <input type="string" name = "teacher_title"> <br>
+        teacher phone: <input type="int" name = "teacher_phone"><br>
+        teacher branch: <input type="string" name = "teacher_branch"> <br>
+        <button type="submit"> gönder </button>
+    </form>
+        <h2>teacher name update</h2>
+        <form action = "/update2reply" method = "post">
+            teacher name: <input type="string" name ="teacher_name"> <br>
+            teacher id: <input type="string" name ="teacher_id"> <br>
+            
+            <button type="submit"> update </button>
+        </form>
+        <h2>teacher name delete</h2>
+            <form action = "/deletereply" method = "post">
+            id: <input type="string" name ="delete_id"> <br>
+            name: <input type="string" name ="delete_name"> <br>
+            <button type="submit"> delete </button><br>
+    </form>
+        <h2>student name record</h2>   
+        <form action = "/studentreply" method = "post">
+        student name: <input type="string" name ="student_name"> <br>
+        student surname: <input type="string" name ="student_surname"> <br>
+        student phone: <input type="int" name = "student_phone"><br>
+        student class: <input type="string" name = "student_class"> <br>
+        student mail: <input type="string" name = "student_mail"> <br>
+        student birtday: <input type="string" name = "student_birtday"> <br>
+        student episode: <input type="string" name = "student_episode"> <br>
+            <button type="submit"> gönder </button>
+    </form>
+        <h2>student name update</h2>     
+        <form action = "/updatereply" method = "post">
+            student name: <input type="string" name ="student_name"> <br>
+            student id: <input type="string" name ="student_id"> <br>
+            
+            <button type="submit"> update </button>
+    </form>
+        <h2>student name delete</h2>
+        <form action = "/delete" method = "post">
+            student id: <input type="string" name ="student_id"> <br>
+            <button type="submit"> delete </button>
+    </form>    
+     
+    </body>
+</html>

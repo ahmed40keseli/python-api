@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teacher</title>
+</head>
+<body>
+    <form action = "/teacherreply" method = "post">
+        teacher name: <input type="string" name ="teacher_name"> <br>
+        teacher surname: <input type="string" name ="teacher_surname"> <br>
+        teacher title: <input type="string" name = "teacher_title"> <br>
+        teacher phone: <input type="int" name = "teacher_phone"><br>
+        teacher branch: <input type="string" name = "teacher_branch"> <br>
+        <button type="submit"> gönder </button>
+    </form>         
+    <form action="/updatereply" method= "post ">
+    isim : <input type="string" name="koyulacak_isim"><br>
+    kişinin id : <input type="string" name="id"><br>
+    <button type="submit">güncelle </button>
+    </form>
+</body>
+</html>
+
+
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teacher</title>
+</head>
+    <body>  
+        <form action = "/teacherreply" method = "post">
+            teacher name: <input type="string" name ="teacher_name"> <br>
+            teacher surname: <input type="string" name ="teacher_surname"> <br>
+            teacher title: <input type="string" name = "teacher_title"> <br>
+            teacher phone: <input type="int" name = "teacher_phone"><br>
+            teacher branch: <input type="string" name = "teacher_branch"> <br>
+            <button type="submit"> gönder </button> 
+        </form>
+    </body>
+</html>
+{% endcomment %}
